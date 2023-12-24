@@ -8,7 +8,7 @@ class MessageModel(BaseModel):
     id = BigIntegerField()
     date = DateTimeField()
     message = TextField()
-    user_id = BigIntegerField()
+    from_id = BigIntegerField()
     out = BooleanField()
     dialog_id = ForeignKeyField(DialogModel, backref="messages")
 

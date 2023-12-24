@@ -5,7 +5,7 @@ from model.base_model import BaseModel
 
 class DialogModel(BaseModel):
     id = BigIntegerField(primary_key=True)
-    date = DateTimeField()
+    datetime = DateTimeField()
     name = TextField()
 
     def __str__(self):
